@@ -7,14 +7,11 @@ public class MyFirstProgram {
         hello("user");
         hello("armen");
 
-        Square s = new Square();
-        Rectangle r = new Rectangle();
+        Square s = new Square(5);  //передаваемые значения из конструктора
+        Rectangle r = new Rectangle(4, 6); //передаваемые значения из конструктора
 
-        s.l = 5;
         System.out.println("Площадь квадрата со стороной " + s.l + " = " + area(s));
 
-        r.a = 4;
-        r.b = 6;
         System.out.println("Площадь прямоугольника со сторонами " + r.a + " и " + r.b + " = " + area(r));
 
 
